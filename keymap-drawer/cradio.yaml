@@ -31,10 +31,10 @@ layers:
   - ','
   - .
   - '#'
-  - ext
+  - {t: BT, h: '0'}
   - {t: SPACE, h: LSHIFT}
   - SPACE
-  - {t: sym, h: sticky}
+  - BT CLR ALL
   sym:
   - '1'
   - '2'
@@ -47,29 +47,29 @@ layers:
   - '9'
   - '0'
   - '|'
-  - Sft+ 4
-  - Sft+ 8
-  - Sft+AGr+ [
-  - AGr+ [
-  - Sft+ 0
-  - Sft+ -
+  - Sft+4
+  - Sft+8
+  - Sft+AltGr+[
+  - AltGr+[
+  - Sft+0
+  - Sft+-
   - '-'
   - ']'
-  - Sft+ ]
-  - Sft+ |
-  - Sft+ 5
-  - Sft+ 9
-  - Sft+AGr+ ]
-  - AGr+ ]
-  - AGr+ ;
-  - Sft+ 1
-  - Sft+ 2
+  - Sft+]
+  - Sft+|
+  - Sft+5
+  - Sft+9
+  - Sft+AltGr+]
+  - AltGr+]
+  - AltGr+;
+  - Sft+1
+  - Sft+2
   - /
-  - Sft+ 7
+  - Sft+7
   - fnc
   - symbols_2
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   ext:
   - ESC
   - {t: ▽, type: trans}
@@ -91,17 +91,17 @@ layers:
   - DOWN
   - RIGHT
   - DEL
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
   - TAB
-  - Ctl+ V
-  - Ctl+ BSPC
+  - Ctl+V
+  - Ctl+BSPC
   - BSPC
   - '&mmv MOVE_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - LCTRL
   - ENTER
   - fnc
@@ -139,23 +139,23 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {type: held}
+  - ''
   symbols_2:
-  - Sft+ =
-  - Sft+ /
-  - Sft+ 3
-  - AGr+ E
-  - AGr+ '
+  - Sft+=
+  - Sft+/
+  - Sft+3
+  - AltGr+E
+  - AltGr+'
   - ''
   - ''
   - ''
   - ''
   - ''
-  - AGr+ -
-  - AGr+ =
+  - AltGr+-
+  - AltGr+=
   - '`'
-  - Sft+ `
-  - Sft+ 6
+  - Sft+`
+  - Sft+6
   - ''
   - ''
   - ''
@@ -163,9 +163,9 @@ layers:
   - ''
   - ''
   - ''
-  - 'Sft+ #'
-  - Sft+ ;
-  - Sft+ '
+  - Sft+#
+  - Sft+;
+  - Sft+'
   - ''
   - ''
   - ''
@@ -174,12 +174,12 @@ layers:
   - ''
   - {type: held}
   - ''
-  - {type: held}
+  - ''
   accent:
   - ''
   - ''
   - ''
-  - AGr+Sft+ E
+  - AltGr+Sft+E
   - ''
   - ''
   - ''
@@ -190,7 +190,7 @@ layers:
   - '='
   - ;
   - '['
-  - Sft+ [
+  - Sft+[
   - ''
   - ''
   - ''
