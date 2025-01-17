@@ -30,9 +30,9 @@ layers:
   - M
   - ','
   - .
-  - '#'
+  - '&bootloader'
   - {t: BT, h: '0'}
-  - {t: SPACE, h: LSHIFT}
+  - '&bootloader'
   - SPACE
   - BT CLR ALL
   sym:
