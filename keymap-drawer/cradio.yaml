@@ -1,40 +1,6 @@
 layout: {qmk_keyboard: ferris_rotated}
 layers:
-  default:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - '&bootloader'
-  - {t: BT, h: '0'}
-  - '&bootloader'
-  - SPACE
-  - BT CLR ALL
+  default: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, ;, Z, X, C, V, B, N, M, ',', ., '&bootloader', LEFT SHIFT, BACKSPACE, ENTER, SPACE]
   sym:
   - '1'
   - '2'
