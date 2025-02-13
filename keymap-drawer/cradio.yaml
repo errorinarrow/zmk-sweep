@@ -1,47 +1,151 @@
 layout: {qmk_keyboard: ferris_rotated}
 layers:
-  default: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, ;, Z, X, C, V, B, N, M, ',', ., '&bootloader', LEFT SHIFT, BACKSPACE, ENTER, SPACE]
-  sym:
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {t: Z, h: LEFT SHIFT}
+  - {t: X, h: LCTRL}
+  - {t: C, h: LEFT ALT}
+  - {t: V, h: LEFT GUI}
+  - B
+  - N
+  - {t: M, h: LEFT GUI}
+  - {t: ',', h: LEFT ALT}
+  - {t: ., h: LCTRL}
+  - {t: /, h: LEFT SHIFT}
+  - LEFT SHIFT
+  - {t: ESC, h: crt_use}
+  - {t: ENTER, h: mouse}
+  - SPACE
+  crt_use:
+  - '`'
+  - VOL DN
+  - UP
+  - VOL UP
+  - PRINTSCREEN
+  - TAB
   - '7'
   - '8'
   - '9'
-  - '0'
-  - '|'
-  - Sft+4
-  - Sft+8
-  - Sft+AltGr+[
-  - AltGr+[
-  - Sft+0
-  - Sft+-
   - '-'
+  - '['
+  - LEFT
+  - DOWN
+  - RIGHT
+  - MUTE
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - ''''
   - ']'
-  - Sft+]
-  - Sft+|
-  - Sft+5
-  - Sft+9
-  - Sft+AltGr+]
-  - AltGr+]
-  - AltGr+;
-  - Sft+1
-  - Sft+2
-  - /
-  - Sft+7
-  - fnc
-  - symbols_2
+  - BRI DN
+  - {t: ▽, type: trans}
+  - BRI UP
+  - ''
+  - BACKSPACE
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  mouse:
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: fnc, h: toggle}
+  - '&mkp MCLK'
+  - '&msc SCRL_UP'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_DOWN'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ext, h: toggle}
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&mkp LCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - DEL
+  - '&msc SCRL_LEFT'
+  - ''
+  - '&msc SCRL_RIGHT'
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  fnc:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: F11, h: sticky}
+  - {t: F12, h: sticky}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
   ext:
   - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - PG UP
   - HOME
   - UP
@@ -65,117 +169,12 @@ layers:
   - Ctl+BSPC
   - BSPC
   - '&mmv MOVE_UP'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: default, h: toggle}
   - LCTRL
   - ENTER
-  - fnc
-  fnc:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - {t: LALT, h: sticky}
-  - {t: LGUI, h: sticky}
-  - {t: LSHIFT, h: sticky}
-  - {t: LCTRL, h: sticky}
-  - RALT
-  - F11
-  - F12
-  - PRINTSCREEN
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  symbols_2:
-  - Sft+=
-  - Sft+/
-  - Sft+3
-  - AltGr+E
-  - AltGr+'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - AltGr+-
-  - AltGr+=
-  - '`'
-  - Sft+`
-  - Sft+6
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Sft+#
-  - Sft+;
-  - Sft+'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  accent:
-  - ''
-  - ''
-  - ''
-  - AltGr+Sft+E
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''''
-  - '='
-  - ;
-  - '['
-  - Sft+[
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '#'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - {type: held}
   settings:
   - '&bootloader'
   - ''
@@ -212,9 +211,17 @@ layers:
   - ''
   - ''
 combos:
-- p: [32, 33]
-  k: accent
-- p: [31, 33]
-  k: symbols_2
 - p: [30, 31]
   k: settings
+- p: [16, 17]
+  k: '='
+- p: [11, 13]
+  k: (
+- p: [12, 13]
+  k: )
+- p: [11, 14]
+  k: '{'
+- p: [12, 14]
+  k: '}'
+- p: [11, 12, 13]
+  k: Alt+F4
