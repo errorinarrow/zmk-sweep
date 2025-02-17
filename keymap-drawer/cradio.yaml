@@ -32,7 +32,7 @@ layers:
   - {t: ., h: LCTRL}
   - {t: /, h: LEFT SHIFT}
   - LEFT SHIFT
-  - {t: ESC, h: crt_use}
+  - {t: BACKSPACE, h: crt_use}
   - {t: ENTER, h: mouse}
   - SPACE
   crt_use:
@@ -215,13 +215,22 @@ combos:
   k: settings
 - p: [16, 17]
   k: '='
+  l: [default]
 - p: [11, 13]
   k: (
+  l: [default]
 - p: [12, 13]
   k: )
+  l: [default]
 - p: [11, 14]
   k: '{'
+  l: [default]
 - p: [12, 14]
   k: '}'
+  l: [default]
 - p: [11, 12, 13]
   k: Alt+F4
+  l: [default]
+- p: [32, 33]
+  k: ESC
+  l: [default]
