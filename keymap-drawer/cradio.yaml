@@ -61,7 +61,7 @@ layers:
   - {t: ▽, type: trans}
   - BRI UP
   - ''
-  - {t: ▽, type: trans}
+  - ESCAPE
   - '1'
   - '2'
   - '3'
