@@ -60,7 +60,7 @@ layers:
   - BRI DN
   - {t: ▽, type: trans}
   - BRI UP
-  - ''
+  - LCTRL
   - ESCAPE
   - '1'
   - '2'
